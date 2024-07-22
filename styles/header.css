@@ -28,6 +28,7 @@ header {
 
 #info {
     list-style: none;
+    font: var(--text-sm);
 
     width: 28rem;
 
