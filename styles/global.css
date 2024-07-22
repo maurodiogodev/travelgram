@@ -27,5 +27,26 @@ body {
     font: var(--text);
 
     color: var(--text-color-secundary);
-    background-color: var(--background-color);
+    /* background-color: var(--background-color); */
+    background-color: #313131;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 128rem;
+    padding-inline: 3.2rem;
+    margin-inline: auto;
+}
+
+.bg-surface-color {
+    /* background-color: var(--surface-color); */
 }

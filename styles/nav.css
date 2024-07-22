@@ -1,0 +1,27 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    line-height: 0;
+    padding-block: 2rem;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    padding-block: 8px;
+}
+
+nav ul li:last-child img {
+    width: 4rem;
+    height: 4rem;
+}
+
+nav ul li:first-child a:hover path {
+    fill: var(--brand-color);
+}
