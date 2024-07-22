@@ -1,5 +1,5 @@
-const magnfier = document.querySelector('#magnfier a img')
+const toggleThemeButton = document.querySelector('#toggle-theme')
 
-magnfier.addEventListener(e, {
-
+toggleThemeButton.addEventListener('click', () => {
+    document.documentElement.classList.toggle('light')
 })

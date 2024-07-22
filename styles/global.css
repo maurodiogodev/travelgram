@@ -8,27 +8,51 @@
     font-size: 62.5%;
 
     --brand-color: #EF5F4C;
-    --background-color: #FFFFFF;
-    --surface-color: #F5F5F5;
     --skeleton-color: #D9D9D9;
-    --shape-transparency: #ffffff8f;
-    --text-color-primary: #313131;
-    --text-color-secundary: #6C6C6C;
+
+    --bg-primary-color: #272727;
+    --bg-secundary-color: #333333;
+
+    --text-color-primary: #cfc8c8;
+    --text-color-secundary: #D9D9D9;
 
     --font-family: "Poppins", sans-serif;
     --text-lg: bold 3.2rem/125% var(--font-family);
     --text: 1.6rem/150% var(--font-family);
     --text-md: 1.4rem/170% var(--font-family);
-    --text-sm: 1.2rem/170% var(--font-family);
+    --text-footer: 1.4rem/150% var(--font-family);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html.light {
+    --bg-primary-color: #F5F5F5;
+    --bg-secundary-color: #FFFFFF;
+
+    --text-color-primary: #313131;
+    --text-color-secundary: #6C6C6C;
 }
 
 body {
-
     font: var(--text);
-
     color: var(--text-color-secundary);
-    /* background-color: var(--background-color); */
-    background-color: #313131;
+
+    background-color: var(--bg-secundary-color);
+
+    transition: background-color 0.5s ease;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+
+    border: none;
+    border-radius: 2rem;
 }
 
 a {
@@ -48,5 +72,6 @@ a:hover {
 }
 
 .bg-surface-color {
-    /* background-color: var(--surface-color); */
+    background-color: var(--bg-primary-color);
+    transition: background-color 0.5s ease;
 }

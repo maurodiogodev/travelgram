@@ -2,9 +2,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2.4rem;
 
     line-height: 0;
     padding-block: 2rem;
+}
+
+nav #logo {
+    margin-right: auto;
+}
+
+nav button {
+    all: unset;
+
+    border: 2px solid var(--brand-color);
+    border-radius: 2rem;
+
+    cursor: pointer;
 }
 
 nav ul {
@@ -20,6 +34,10 @@ nav ul {
 nav ul li:last-child img {
     width: 4rem;
     height: 4rem;
+}
+
+html.light nav ul li:first-child path {
+    fill: var(--text-color-secundary);
 }
 
 nav ul li:first-child a:hover path {
