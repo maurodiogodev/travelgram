@@ -6,29 +6,49 @@ nav {
 
     line-height: 0;
     padding-block: 2rem;
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: var(--nav-height);
+
+    z-index: 100;
+}
+
+nav.scroll-in {
+    background-color: var(--brand-bg-color);
+    backdrop-filter: blur(5px);
+
+    animation: navFadeIn ease .5s;
+}
+
+nav.scroll-out {
+    width: 100vw;
+    animation: navFadeOut ease .5s;
+}
+
+@keyframes navFadeIn {
+    from {
+        background-color: inherit;
+    }
+
+    to {
+        background-color: var(--brand-bg-color);
+    }
+}
+
+@keyframes navFadeOut {
+    from {
+        background-color: var(--brand-bg-color);
+    }
+
+    to {
+        background-color: inherit;
+    }
 }
 
 nav #logo {
     margin-right: auto;
-}
-
-nav button {
-    all: unset;
-
-    cursor: pointer;
-    padding: 8px;
-
-    font: var(--text-sm);
-
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-
-    border-radius: 50%;
-
-    box-shadow:
-        3px 3px 10px rgba(255, 255, 255, 0.1),
-        3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 html.light .light-icon,
@@ -49,6 +69,10 @@ nav ul {
 nav ul li:last-child img {
     width: 4rem;
     height: 4rem;
+}
+
+nav ul li:first-child a path {
+    transition: fill .2s;
 }
 
 html.light nav ul li:first-child path {

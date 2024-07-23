@@ -8,6 +8,7 @@
     font-size: 62.5%;
 
     --brand-color: #EF5F4C;
+    --brand-bg-color: #1a1a1abb;
     --skeleton-color: #D9D9D9;
 
     --bg-primary-color: #272727;
@@ -22,6 +23,8 @@
     --text-md: 1.4rem/170% var(--font-family);
     --text-footer: 1.4rem/150% var(--font-family);
     --text-sm: 1.2rem/150% var(--font-family);
+
+    --nav-height: 7.2rem;
 }
 
 html {
@@ -29,6 +32,7 @@ html {
 }
 
 html.light {
+    --brand-bg-color: #ffffffbb;
     --bg-primary-color: #F5F5F5;
     --bg-secundary-color: #FFFFFF;
 
@@ -59,6 +63,7 @@ body::-webkit-scrollbar-thumb {
 a {
     text-decoration: none;
     color: inherit;
+    transition: all .2s;
 }
 
 a:hover {
@@ -78,10 +83,14 @@ a:hover {
 }
 
 @media (min-width: 580px) and (max-width: 760px) {
+
+    nav ul :last-child img {
+        display: none;
+    }
+
     header.container {
         flex-direction: column;
     }
-
 
     header.container ul#info {
         width: 100%;

@@ -1,5 +1,5 @@
 header {
-    padding-block: 3.2rem;
+    padding-block: calc(3.2rem + var(--nav-height)) 3.2rem;
 
     display: flex;
     justify-content: space-between;
