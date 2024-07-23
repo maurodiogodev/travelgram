@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 3.6rem;
+    gap: 2.4rem;
 
     line-height: 0;
     padding-block: 2rem;
