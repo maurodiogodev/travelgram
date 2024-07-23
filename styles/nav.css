@@ -1,18 +1,28 @@
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 2.4rem;
 
     line-height: 0;
     padding-block: 2rem;
 
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+
     width: 100vw;
     height: var(--nav-height);
 
     z-index: 100;
+}
+
+nav .keep-trying {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.4rem;
 }
 
 nav.scroll-in {
