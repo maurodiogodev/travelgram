@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2.4rem;
+    gap: 3.6rem;
 
     line-height: 0;
     padding-block: 2rem;
@@ -15,10 +15,25 @@ nav #logo {
 nav button {
     all: unset;
 
-    border: 2px solid var(--brand-color);
-    border-radius: 2rem;
-
     cursor: pointer;
+    padding: 8px;
+
+    font: var(--text-sm);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 50%;
+
+    box-shadow:
+        3px 3px 10px rgba(255, 255, 255, 0.1),
+        3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+html.light .light-icon,
+html:not(.light) .dark-icon {
+    display: none;
 }
 
 nav ul {
