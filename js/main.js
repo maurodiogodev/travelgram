@@ -1,6 +1,9 @@
 const navBar = document.querySelector('#navigation');
 
-window.addEventListener('scroll', () => {
+controlScrollStatus()
+window.addEventListener('scroll', controlScrollStatus)
+
+function controlScrollStatus() {
     if (scrollY > 0) {
         navBar.classList.remove('scroll-out')
         navBar.classList.add("scroll-in")
@@ -8,7 +11,7 @@ window.addEventListener('scroll', () => {
         navBar.classList.remove('scroll-in')
         navBar.classList.add('scroll-out')
     }
-})
+}
 
 const toggleThemeButton = document.querySelector('#toggle-theme')
 
