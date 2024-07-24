@@ -82,6 +82,18 @@ a:hover {
     transition: background-color 0.5s ease;
 }
 
+
+@media (max-width: 760px) {
+    nav ul:first-of-type {
+        display: none;
+    }
+
+    ul#mobile-menu.mobile-nav,
+    button.hamburger {
+        display: block;
+    }
+}
+
 @media (min-width: 580px) and (max-width: 760px) {
 
     nav ul :last-child img {
