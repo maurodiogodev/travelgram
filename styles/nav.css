@@ -106,6 +106,8 @@ nav ul li:last-child svg {
     position: absolute;
     right: -8px;
     bottom: 2px;
+
+    transition: background-color .4s;
 }
 
 nav ul li:last-child svg path {
