@@ -127,6 +127,7 @@ body>ul.is-active-off {
 
 #mobile-menu li:last-child a {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1.4rem;
 }
