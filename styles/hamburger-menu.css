@@ -100,7 +100,7 @@ body>ul.is-active-off {
 }
 
 #mobile-menu li {
-    display: block;
+    display: flex;
     width: 100%;
     max-width: 200px;
     margin: 0 auto 16px;
@@ -110,10 +110,11 @@ body>ul.is-active-off {
     text-decoration: none
 }
 
-#mobile-menu li:first-child a {
+#mobile-menu li a {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    align-items: center;
+    gap: 1.4rem;
 }
 
 #mobile-menu svg path {
@@ -123,11 +124,4 @@ body>ul.is-active-off {
 
 #mobile-menu a:hover svg path {
     fill: var(--brand-color);
-}
-
-#mobile-menu li:last-child a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.4rem;
 }
