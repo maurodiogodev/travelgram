@@ -30,6 +30,7 @@
     --nav-height: 7.2rem;
     --nav-border-color: rgba(255, 217, 0, 0.185);
     --brand-shadow-color: rgba(255, 217, 0, 0.3);
+    --icon-hover-color: #73adff;
 }
 
 html {

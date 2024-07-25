@@ -101,15 +101,18 @@ nav ul li:last-child svg {
     padding: 4px;
     border-radius: 50%;
     background-color: var(--bg-primary-color);
-    box-shadow: 0px 0px 16px var(--brand-shadow-color);
+    box-shadow: 0px 0px 10px var(--brand-shadow-color);
 
     position: absolute;
     right: -8px;
     bottom: 2px;
-
-    transition: background-color .4s;
 }
 
 nav ul li:last-child svg path {
     fill: var(--brand-color);
+    transition: fill .4s;
+}
+
+nav ul li:last-child svg:hover path {
+    fill: var(--icon-hover-color);
 }
