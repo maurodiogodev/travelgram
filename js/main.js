@@ -47,21 +47,24 @@ window.addEventListener('click', e => {
 })
 
 function openMenu() {
-    menuBtn.classList.add('is-active')
+    toggleMenu()
+    mobileMenu.classList.remove('is-active-off')
     mobileMenu.classList.add('is-active')
-    mobileMenu.classList.add('mobile-nav')
-    toggleThemeLabel.classList.add('hidden')
-    document.body.classList.add('hold-scrolling')
 
     menuIsOpen = true
 }
 
 function closeMenu() {
-    menuBtn.classList.remove('is-active')
+    toggleMenu()
     mobileMenu.classList.remove('is-active')
-    mobileMenu.classList.remove('mobile-nav')
-    toggleThemeLabel.classList.remove('hidden')
-    document.body.classList.remove('hold-scrolling')
+    mobileMenu.classList.add('is-active-off')
 
     menuIsOpen = false
+}
+
+function toggleMenu() {
+    menuBtn.classList.toggle('is-active')
+    // mobileMenu.classList.toggle('is-active')
+    mobileMenu.classList.toggle('mobile-nav')
+    toggleThemeLabel.classList.toggle('hidden')
 }

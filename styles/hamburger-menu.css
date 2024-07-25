@@ -67,13 +67,36 @@ body>ul {
     background-color: var(--brand-bg-color);
     backdrop-filter: blur(5px);
 
-    -webkit-transition: 0.4s;
-    transition: left .4s !important;
+    -webkit-transition: left 0.4s;
+    transition: left .4s;
 }
 
 body>ul.is-active {
-    position: fixed;
-    left: calc(100% - 80%);
+    animation: slideLeft ease .4s forwards;
+}
+
+body>ul.is-active-off {
+    animation: slideOff ease .4s;
+}
+
+@keyframes slideLeft {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 20%;
+    }
+}
+
+@keyframes slideOff {
+    from {
+        left: 30%;
+    }
+
+    to {
+        left: 110%;
+    }
 }
 
 #mobile-menu li {
@@ -106,9 +129,4 @@ body>ul.is-active {
     display: flex;
     align-items: center;
     gap: 1.4rem;
-}
-
-#mobile-menu li:last-child img {
-    width: 5.2rem;
-    height: 5.2rem;
 }

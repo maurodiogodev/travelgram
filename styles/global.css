@@ -29,7 +29,7 @@
 
     --nav-height: 7.2rem;
     --nav-border-color: rgba(255, 217, 0, 0.185);
-    --brand-shadow-color: rgba(255, 217, 0, 0.393);
+    --brand-shadow-color: rgba(255, 217, 0, 0.3);
 }
 
 html {
@@ -57,11 +57,6 @@ body {
     background-color: var(--bg-secundary-color);
 
     transition: background-color 0.5s ease;
-}
-
-body.hold-scrolling {
-    overflow: hidden;
-    transition: overflow .4s !important;
 }
 
 body::-webkit-scrollbar {
@@ -108,7 +103,11 @@ a:hover {
         display: none;
     }
 
-    ul#mobile-menu.mobile-nav,
+    ul#mobile-menu.mobile-nav {
+        display: block;
+        transition: .4s;
+    }
+
     button.hamburger {
         display: block;
     }
