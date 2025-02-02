@@ -174,11 +174,15 @@ a:hover {
 
     footer {
         flex-direction: column;
-    }
+        justify-content: space-between;
 
-    footer span:nth-child(1) {
-        margin-top: 2.4rem;
-        order: 1;
-        align-self: center;
+        & span:nth-child(1) {
+            align-self: center;
+        }
+
+        & div {
+            margin-top: .8rem;
+            padding-inline: 2.4rem;
+        }
     }
 }

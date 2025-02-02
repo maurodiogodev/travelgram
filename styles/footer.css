@@ -4,6 +4,11 @@ footer {
 
     padding-block: 2.4rem;
     font: var(--text-footer);
+
+    & div {
+        display: flex;
+        gap: 1.6rem;
+    }
 }
 
 footer span:nth-child(1) {
