@@ -18,6 +18,10 @@ A social network project focused on travel, developed to demonstrate fundamental
 - 📊 **Complete Profile** - Detailed user information
 - 🎨 **CSS Animations** - Transitions and visual effects
 
+## 🌐 Demo
+
+Access the online version: [Travelgram](https://maurodiogodev.github.io/travelgram/)
+
 ## 🚀 Technologies Used
 
 ### Front-end
@@ -39,10 +43,6 @@ A social network project focused on travel, developed to demonstrate fundamental
 - **Dynamic CSS Classes** - State control
 - **Scroll Events** - Interactive navigation
 - **Click Outside Detection** - Advanced UX
-
-## 🌐 Demo
-
-Access the online version: [Travelgram](https://maurodiogodev.github.io/travelgram/)
 
 ## 🎯 Applied Web Development Concepts
 
@@ -130,10 +130,6 @@ This is a study project, but suggestions are always welcome!
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-## 📄 License
-
-This project is under the MIT license. See the `LICENSE` file for more details.
 
 ## 👨‍💻 Developer
 
