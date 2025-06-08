@@ -2,7 +2,7 @@
 
 A social network project focused on travel, developed to demonstrate fundamental and advanced concepts of front-end web development.
 
-![Travelgram Preview](https://via.placeholder.com/800x400/EF5F4C/FFFFFF?text=Travelgram+Preview)
+![Travelgram Preview](./assets/images/cover.png)
 
 ## 📋 About the Project
 
@@ -42,7 +42,7 @@ A social network project focused on travel, developed to demonstrate fundamental
 
 ## 🌐 Demo
 
-Access the online version: [Pomodoro Timer](https://maurodiogodev.github.io/travelgram/)
+Access the online version: [Travelgram](https://maurodiogodev.github.io/travelgram/)
 
 ## 🎯 Applied Web Development Concepts
 
@@ -137,8 +137,6 @@ This project is under the MIT license. See the `LICENSE` file for more details.
 
 ## 👨‍💻 Developer
 
-Developed with ❤️ to practice and demonstrate modern web development concepts.
-
 **Concepts applied in this project:**
 - ✅ Semantic HTML
 - ✅ CSS Grid & Flexbox
@@ -149,6 +147,10 @@ Developed with ❤️ to practice and demonstrate modern web development concept
 - ✅ UX/UI Design
 - ✅ Code Organization
 
+⭐ **If this project helped you in any way, consider giving the repository a star!**
+
+Design UI/UX by [Rocketseat](https://www.rocketseat.com.br/)
+
 ---
 
-⭐ **If this project helped you in any way, consider giving the repository a star!**
+<div align="center"> <p>Developed with ❤️ as part of my web development learning journey.</p> <p>Feel free to contribute or get in touch!</p> </div>
